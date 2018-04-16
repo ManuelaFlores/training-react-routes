@@ -39,12 +39,15 @@ class NameForm extends React.Component {
   render() {
     const { error, isDirty } = this.state;
     return (
-      <div>
-      <h1>Reactibook</h1>
+      <div className="h-100">
+      <div className=" height-150 d-flex align-items-center justify-content-center">
+      <h1><i className="fas fa-angle-left root-color-lab"></i> Reactibook <i className="fas fa-angle-right root-color-lab"></i></h1>
+      </div>
+      <div className="row m-0 p-0 d-flex justify-content-center">
       <form
         onSubmit={this.handleSubmit}
         onFocus={this.handleFocus}
-        className="container my-4"
+        className="container my-4 col-xs-10 col-md-6 box-shadow p-3 m-3 "
       >
         <div className="form-group">
           <label className="form-label">
@@ -69,11 +72,15 @@ class NameForm extends React.Component {
           <input type="password" name="password" className="form-control" required />
           <small className="form-text text-muted">Make it a good one!</small>
         </div>
-        <div className="form-group">
-          <Link to="/main">
+        <div className="form-group d-flex justify-content-center">
+          <Link 
+          to="/main"
+          role="button"
+          className="w-50 bg-pink-lab  text-white font-weight-bold border-radius-5px"
+          >
           <button
             type="submit"
-            className="btn btn-primary"
+            className="btn  btn-block bg-pink-lab text-white font-weight-bold border-radius-5px"
             disabled={Boolean(error)}
           >
             Send
@@ -81,6 +88,7 @@ class NameForm extends React.Component {
           </Link>
         </div>
       </form>
+      </div>
       </div>
     );
   }

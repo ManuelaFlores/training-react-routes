@@ -1,0 +1,21 @@
+/* STYLES FROM FORM-PRUEBA */
+
+.height-150{
+    height: 150px;
+}
+
+.box-shadow {
+    box-shadow: 1px 6px 58px -8px rgba(84,98,112,1);
+}
+
+.root-color-lab {
+    color:#FFE520
+}
+
+.bg-pink-lab{
+    background-color: #FF009E;
+}
+
+.border-radius-5px{
+    border-radius: 5px;
+}
