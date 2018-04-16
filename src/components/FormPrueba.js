@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router';
-import Main from './Main'
+import AppIndex from './AppIndex';
+import {
+  NavLink,
+} from 'react-router-dom'
+
 
 
 class NameForm extends React.Component {
@@ -73,19 +77,21 @@ class NameForm extends React.Component {
           <small className="form-text text-muted">Make it a good one!</small>
         </div>
         <div className="form-group d-flex justify-content-center">
-          <Link 
-          to="/main"
+          <NavLink 
+          to="/appIndex"
           role="button"
           className="w-50 bg-pink-lab  text-white font-weight-bold border-radius-5px"
-          >
+          > 
           <button
             type="submit"
-            className="btn  btn-block bg-pink-lab text-white font-weight-bold border-radius-5px"
+            className="btn w-50 btn-block bg-pink-lab text-white font-weight-bold border-radius-5px"
             disabled={Boolean(error)}
+            
+            type="button"
           >
             Send
             </button>
-          </Link>
+          </NavLink> 
         </div>
       </form>
       </div>
