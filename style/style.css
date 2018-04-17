@@ -2,20 +2,158 @@
 
 .height-150{
     height: 150px;
-}
-
-.box-shadow {
+  }
+  
+  .box-shadow {
     box-shadow: 1px 6px 58px -8px rgba(84,98,112,1);
-}
-
-.root-color-lab {
+  }
+  
+  .root-color-lab {
     color:#FFE520
-}
-
-.bg-pink-lab{
+  }
+  
+  .bg-pink-lab{
     background-color: #FF009E;
-}
-
-.border-radius-5px{
+  }
+  
+  .bg-green-lab{
+    background-color: #56F89A;
+  }
+  
+  .border-radius-5px{
     border-radius: 5px;
-}
+  }
+  
+  .border-none{
+    border: none ;
+  }
+  
+  /* GENERAL STYLES */
+  body{
+    margin: 0 auto;
+    background-color: #eee;
+  }
+  
+  /* STYLES FROM HEADER */
+  
+  .root-header{
+    display: flex;
+    background-color: #2d84cc;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 1em;
+  }
+  
+  .logo-header {
+    margin: 0;
+    color: #fff;
+    font-size: 14pt;
+  }
+  
+  .bg-layout{
+    background-image: url('../public/assets/images/bg-layout.jpg');
+    height: 250px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  
+  /* STYLES FROM MESSAGE */
+  
+  .root-message {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius:  5px;
+    padding: 1em;
+    margin: 0.5em;
+  }
+  
+  .styles-text{
+    font-size: 16pt;
+    font-weight: 200;
+  
+  }
+  
+  .styles-user{
+    display:flex;
+    align-items: center;
+  }
+  
+  .styles-avatar{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+  }
+  
+  .styles-displayName{
+    font-weight: bold;
+    padding: 0.5em;
+  }
+  
+  .styles-username{
+    color: #aaa;
+  }
+  
+  .styles-date{
+    color: #aaa;
+    padding: 0.5em;
+    font-size: 8pt;
+  }
+  
+  .styles-buttons{
+    display: flex;
+    justify-content: flex-start;
+    color: #aaa;
+  }
+  
+  .styles-icons {
+    margin-right: 3em;
+  }
+  
+  .message-num{
+    font-size: 10pt;
+    margin-right: 3em;
+    margin-left: 0.25em;
+  }
+  
+  .retweet-green{
+    color: #20883f
+  }
+  
+  .favorite-yellow {
+    color: #e2c400
+  }
+  
+  /* STYLES FROM MESSAGE LIST */
+  
+  .messageList-root{
+    margin: 0.5em;
+  }
+  
+  /* STYLES FROM PROFILE BAR */
+  
+  .avatar-profileBar{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+  }
+  
+  .button-profileBar {
+    border-radius: 5px;
+    margin: 0 1em;
+    padding: 0.5em 0.75em;
+  }
+  
+  /*STYLES FROM INPUT TEXT  */
+  
+  .text-inputText {
+    border: 1px solid #ddd;
+    height: 5em;
+    padding: 0.75em;
+    margin: 1em 0.5em;
+    resize: none;
+  }
+
+  

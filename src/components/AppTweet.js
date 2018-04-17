@@ -23,6 +23,6 @@ class AppTweet extends Component {
       </div>
     )
   }
-}
+};
 
-export default AppTweet
+export default AppTweet;
